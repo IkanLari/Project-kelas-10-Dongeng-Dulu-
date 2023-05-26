@@ -1,0 +1,94 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(-250deg, #0300A3 0%, #FFFFFF 100%);
+    height: 541px;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+
+.logo {
+    text-align: center;
+    margin-top: 100px;
+}
+
+.selamat_datang {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 45px;
+}
+
+.dongeng_dulu {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.daftar, .masuk {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.masuk{
+    margin-left: 200px;
+}
+
+.daftar {
+    margin-left: -200px;
+    margin-bottom: -52px;
+    margin-top: 100px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    border-radius: 100px;
+    padding: 12px 62px;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+@media (max-width: 691px){
+    .selamat_datang {
+        font-size: 35px;
+    }
+
+    .dongeng_dulu{
+        font-size: 20px;
+    }
+
+    .daftar{
+        margin-top: 50px;
+    }
+}
+
+@media (max-width: 550px) {
+    .selamat_datang {
+        font-size: 30px;
+    }
+
+    .dongeng_dulu {
+        font-size: 15px; 
+    }
+
+    a {
+        font-size: 16px;
+    }
+
+    .daftar{
+        margin-bottom: -49px;
+    }
+}
+
+@media (max-width: 375px){
+    a{
+        padding: 10px 55px;
+    }
+}
+
+@media (max-height: 667px){
+    body{
+        height: 667px;
+    }
+}

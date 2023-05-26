@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dongeng Dulu - Website Cerita Anak dan Cerita Rakyat</title>
+    <link rel="icon" href="../asset/nike asli.png">
+    <link rel="stylesheet" href="daftar.css">
+</head>
+<body>
+    <script>
+        function showPassword() {
+            let x = document.getElementById("inputPassword"); 
+                if (x.type === "password") {
+                    x.type = "text";
+                } else {
+                    x.type = "password";
+            }
+        }
+
+        function checkInput() {
+            let inputEmail = document.getElementById('inputEmail').value;
+            let inputPassword = document.getElementById('inputPassword').value;
+
+            if (inputEmail === '' && inputPassword === '') {
+                document.getElementById('result').innerHTML = 'Email dan Password tidak boleh kosong'
+            }else if (inputEmail === '') {
+                document.getElementById('result').innerHTML = 'Email tidak boleh kosong'
+            } else if (inputPassword === '') {
+                document.getElementById('result').innerHTML = 'Password tidak boleh kosong'
+            } else {
+                window.location.href = 'home.html';
+            }
+        }
+    </script>
+    <div class="kotak">
+        <div class="logo">
+            <img src="../asset/nike asli.png" alt="logo" width="60">
+        </div>
+        <form>
+            <div class="email_label">
+                <label for="email">Email:</label>
+            </div>
+            <div class="email_input">
+                <input type="email" placeholder="Masukan Email Anda" id="inputEmail" required>
+            </div>
+            <div class="password_label">
+                <label for="password">Password:</label>
+            </div>
+            <div class="password_input">
+                <input type="password" placeholder="Masukan Password Anda" id="inputPassword" required>
+            </div>
+            <div class="show_password">
+                <input type="checkbox" onclick="showPassword()">Show Password
+            </div>
+        </form>
+        <div class="back_button">
+            <a href="welcome.html"><img src="../asset/tombol bek.png" alt="back_button" width="35"></a>
+        </div>
+        <p id="result"></p>
+        <div class="daftar">
+            <a onclick="checkInput()">Daftar</a>
+        </div>
+    </div>
+</body>
+</html>

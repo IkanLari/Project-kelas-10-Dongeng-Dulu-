@@ -1,0 +1,374 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    user-select: none;
+    margin: 0;
+    /* height: 2000px; */
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+
+/* Header */
+
+.navbar {
+    width: 100%;
+    height: fit-content;
+    position: fixed;
+    top: 0;
+    background: linear-gradient(90deg, #FFFFFF 0%, #2E28A5 100%);
+    border-bottom-width: 3px;
+    border-bottom-style: solid;
+    border-bottom-color: #D9D9D9;
+    z-index: 999;
+}
+
+.container {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    flex-direction: row;
+}
+
+.logo {
+    margin-left: 10px;
+}
+
+.judul {
+    margin-left: 15px;
+}
+
+.searchbar{
+    position: relative;
+    float: right;
+    top: -58px;
+    right: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.searchbar img{
+    background-color: white;
+    padding: 4px;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+.searchbar input{
+    width: 250px;
+    font-size: 15px;
+    height: 31px;
+    border-radius: 3px;
+    padding-left: 10px;
+    border: none;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    outline: none;
+}
+
+/* Main */
+
+.dongenganak{
+    position: absolute;
+    left: 2%;
+    top: 18%;
+}
+
+.content1{
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    top: 180px;
+    max-width: 100%;
+    justify-content: flex-start;
+    padding-left: 5px;
+    padding-right: 5px;
+    box-sizing: border-box;
+    cursor: default;
+    max-width: fit-content;
+}
+
+.content1 a, .content2 a{
+    text-decoration: none;
+    color: rgb(0, 0, 0, 0.5);
+}
+
+p{
+    font-size: 16px;
+}
+
+h3{
+    color: black;
+    font-size: 20px;
+}
+
+.kancildanbuaya, .singadantikus, .kurakuradankelinci, .semutdanbelalang{
+    background-color: rgb(217, 217, 217, 0.7);
+    padding: 15px;
+    border-radius: 5px;
+    margin: 0 39px;
+}
+
+.ceritarakyat{
+    margin-top: 270px;
+    position: absolute;
+    left: 2%;
+}
+
+.content2{
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    top: 335px;
+    max-width: 100%;
+    justify-content: flex-start;
+    padding-left: 5px;
+    padding-right: 5px;
+    box-sizing: border-box;
+    max-width: fit-content;
+    cursor: default;
+}
+
+.asalusuldanautoba, .timunmas, .bawangmerahdanbawangputih, .sangkuriang{
+    background-color: rgb(217, 217, 217, 0.7);
+    padding: 15px;
+    border-radius: 5px;
+    margin: 0 39px; 
+}
+
+.timunmas img{
+    padding: 0 17.5px;
+    background-color: #FFFFFF;
+}
+
+.bawangmerahdanbawangputih h3{
+    max-width: 225px;
+    margin-bottom: -12px;
+}
+
+.sangkuriang img{
+    padding: 0 17.5px;
+    background-color: #FFFFFF;
+}
+
+.comingsoon{
+    text-align: center;
+    position: relative;
+    top: 470px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #959595;
+}
+
+/* Footer */
+
+.footer{
+    width: 100%;
+    height: 100%;
+    background-color: #3F3F3F;
+    position: relative;
+    top: 520px;
+}
+
+.kiri{
+    display: flex;
+    flex-direction: column;
+}
+
+.instagram, .wangsaff, .gmail{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    box-sizing: border-box;
+    padding-top: 60px;
+    margin-left: 70px;
+}
+
+.wangsaff{
+    margin-left: 87px;
+    
+}
+
+.gmail{
+    margin-left: 83px;
+    margin-bottom: 50px;
+}
+
+.instagram img{
+    width: 65px;
+}
+
+.wangsaff img{
+    width: 30px;
+}
+
+.gmail img{
+    width: 40px;
+}
+
+.instagram a, .nowangsaff, .alamatgmail a{
+    font-size: 18px;
+    margin-left: -5px;
+    color: white;
+}
+
+.nowangsaff{
+    margin-left: 12px;
+}
+
+.alamatgmail{
+    margin-left: 5px;
+}
+
+.weem{
+    display: flex;
+    flex-direction: row-reverse;
+    margin-right: 30px;
+    padding-bottom: 10px;
+    color: white;
+}
+
+/* Max Responsive */
+
+@media (max-width: 1115px){
+    .dongenganak{
+        top: 22%;
+    }
+    .content1{
+        top: 100px;
+    }
+    .content2{
+        top: 245px;
+    }
+}
+
+@media (max-width: 681px) {
+    .judul{
+        font-size: 10px;
+    }
+
+    .searchbar{
+        top: -44px;
+    }
+
+    .searchbar input {
+        width: 160px;
+        height: 26px;
+    }
+
+    .searchbar img{
+        padding: 1.5px;
+    }
+    .dongenganak{
+        top: 18%;
+    }
+    .content1{
+        top: 70px;
+    }
+}
+
+@media (max-width: 675px) {
+    .content1{
+        justify-content: center;
+    }
+    .semutdanbelalang{
+        margin-bottom: 0;
+    }
+
+    .kancildanbuaya{
+        margin-top: 80px;
+    }
+
+    .singadantikus, .kurakuradankelinci, .semutdanbelalang{
+        margin-top: 30px;
+    }
+
+    .ceritarakyat{
+        top: 1275px;
+    }
+    .content2{
+        top: 260px;
+        justify-content: center;
+        margin-bottom: 0;
+    }
+
+    .timunmas, .bawangmerahdanbawangputih, .sangkuriang{
+        margin-top: 30px;
+    }
+
+    .comingsoon{
+        top: 380px;
+    }
+    .footer{
+        top: 420px;
+    }
+}
+
+@media (max-width: 510px) {
+    .weem{
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 483px) {
+    .searchbar {
+        right: 10px;
+
+    }
+    .dongenganak {
+        top: 19%;
+        font-size: 13px;
+    }
+    .ceritarakyat{
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 433px) {
+    .searchbar{
+        float: none;
+        top: 0;
+        margin-left: 26%;
+        margin-bottom: 14px;
+    }
+    .container{
+        margin-left: 20%;
+    }
+    .dongenganak{
+        top: 110px;
+        font-size: 12px;
+    }
+}
+
+/* Max Min Responsive */
+
+@media (max-width: 1115px) and (min-width: 676px) {
+    .kancildanbuaya, .singadantikus, .kurakuradankelinci, .semutdanbelalang{
+        margin-top: 100px;
+    }
+}
+
+@media (max-width: 1115px) and (min-width: 676px) {
+    .asalusuldanautoba, .timunmas, .bawangmerahdanbawangputih, .sangkuriang{
+        margin-top: 100px;
+    }
+}
+
+/* Min Responsive */
+
+@media (min-width: 434px) {
+    .container{
+        position: relative;
+        top: 16px;
+    }
+    .searchbar{
+        position: relative;
+        top: -25px;
+    }
+}
+
+@media (min-width: 682px) {
+    .searchbar{
+        position: relative;
+        top: -40px;
+    }
+}
